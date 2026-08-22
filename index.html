@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>Mushu mp3 Downloader</title>
+  <link rel="icon" type="image/webp" href="mushu-logo.webp">
+  <link rel="apple-touch-icon" href="mushu-logo.webp">
+  <link rel="stylesheet" href="styles.css?v=12">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Mushu mp3 Downloader inicio">
+        <img class="brand-logo" src="mushu-logo.webp" alt="Mushu"><span>Mushu <b>mp3</b> Downloader</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#how-it-works">Cómo funciona</a><a href="#downloads">Mis descargas</a>
+      </nav>
+      <span class="status"><i></i> Online</span>
+    </header>
+    <main>
+      <section class="hero" aria-label="Descargador de MP3">
+        <div class="hero-content">
+          <h1>Mushu <em>mp3</em></h1>
+          <form class="download-form" id="youtube-form">
+            <label for="youtube-input">Descarga tu música desde YouTube</label>
+            <div class="input-row"><input id="youtube-input" type="url" placeholder="Pega aquí el enlace de tu vídeo" autocomplete="url" required><button id="add-youtube" type="submit"><span>Descargar MP3</span><strong>↗</strong></button></div>
+            <p class="input-error" id="input-error" role="alert"></p>
+          </form>
+          <div class="hero-note"><span>♫</span> Audio de alta calidad <span class="dot">·</span> Sin registro <span class="dot">·</span> Gratis</div>
+        </div>
+        <div class="scroll-cue"><span></span> Desliza para explorar</div>
+      </section>
+      <section class="downloads" id="downloads">
+        <div class="section-heading"><div><p class="kicker">YOUR LIBRARY / 02</p><h2>Descargas recientes</h2></div><span class="count" id="queue-count">0 archivos</span></div>
+        <div class="queue" id="queue"><div class="empty-state" id="empty-state"><span>◌</span><p>Aquí aparecerán tus descargas.</p></div></div>
+      </section>
+      <section class="how" id="how-it-works">
+        <p class="kicker">TAN SIMPLE COMO DEBERÍA SER</p>
+        <div class="steps"><article><span>01</span><h2>Copia un enlace</h2><p>Encuentra tu vídeo favorito en YouTube y copia su dirección.</p></article><article><span>02</span><h2>Pega y descarga</h2><p>Introduce el enlace arriba y pulsa Descargar MP3.</p></article><article><span>03</span><h2>Llévatelo contigo</h2><p>Tu audio estará listo para escuchar cuando quieras.</p></article></div>
+      </section>
+    </main>
+    <footer><span>Mushu mp3 Downloader</span><span>Hecho para escuchar.</span></footer>
+  </div>
+  <script src="app.js?v=5"></script>
+</body>
+</html>
