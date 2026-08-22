@@ -34,6 +34,7 @@ class AppHandler(SimpleHTTPRequestHandler):
             options = {
                 "format": "bestaudio/best",
                 "ffmpeg_location": imageio_ffmpeg.get_ffmpeg_exe(),
+                "extractor_args": {"youtube": {"player_client": ["android", "web"]}},
                 "outtmpl": str(DOWNLOADS / "%(title)s.%(ext)s"),
                 "noplaylist": True,
                 "quiet": True,
